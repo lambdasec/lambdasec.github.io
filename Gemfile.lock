@@ -108,6 +108,8 @@ GEM
     jekyll-swiss (0.4.0)
     jekyll-theme-primer (0.1.1)
       jekyll (~> 3.3)
+    jekyll-theme-tactile (0.0.3)
+      jekyll (~> 3.3)
     jekyll-titles-from-headings (0.1.2)
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
@@ -159,6 +161,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 109)
+  jekyll-theme-tactile
 
 BUNDLED WITH
    1.13.6
