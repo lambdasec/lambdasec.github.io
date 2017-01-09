@@ -1,6 +1,6 @@
 # Blog
 
-This repository contains the sources for a Jekyll-based website that is deployed at https://lambdasec.github.io
+This repository contains the source code for a Jekyll-based website that is deployed at https://lambdasec.github.io
 
 ## Local Development
 
