@@ -10,7 +10,8 @@ Recently, a survey done on [open source risk](https://www.helpnetsecurity.com/20
 ## Is this an accurate description of open source today?
 Unfortunately yes, in fact the problem is more severe in some respects. Today, most organizations don't even have a good idea of the amount of open source they are using. They typically struggle to even produce a bill of materials report of the open source in use in the enterprise. The problem is quite challenging since it is difficult to track every single component or application in use in a large enterprise. Even when policies regarding use of open source exist, they are hard to enforce and keep track of.
 
-## Unchecked use of open source is a growing problem in software development and enterprise applications
+>Unchecked use of open source is a growing problem in software development and enterprise applications
+
 In fact, these days we see that a typical application today contains over 80% of open source code. The rapid growth of package mangers and central distribution repositories like Maven Central (Java), PyPI (Python), Ruby Gems (Ruby), etc. has made it very easy for developers to assembly application using off the shelf open source components. However, reusable code often leads to reusable vulnerabilities. The prime example of this is the recent Equifax data breach which was due to a vulnerability in the Apache Struts library. 
 
 ## What should be done to deal with the apparent problem?
