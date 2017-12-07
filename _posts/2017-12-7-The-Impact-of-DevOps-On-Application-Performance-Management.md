@@ -7,7 +7,7 @@ Application Performance Mangement or APM refers to the practice of monitoring th
 runtimes, and overall user experience. In this article, we will talk about how DevOps impacts APM and how you can adjust 
 to the new software supply chain.
 
-![Application Performance Management](../images/apm-devops.png)
+![Application Performance Management](../images/apm-devops.jpg)
 
 ## How DevOps changes Application Performance Management (APM)? 
 
