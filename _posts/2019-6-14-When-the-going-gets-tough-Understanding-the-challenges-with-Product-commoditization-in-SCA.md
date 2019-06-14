@@ -35,11 +35,11 @@ Coming back to the problem of managing open-source risk and the current offering
 
 As everyone knows, past performance is no guarantee of future returns. After all, it is possible that we just got lucky or the fact that were not as successful commercially as some of our other competitors must mean that there are things we could have done better. However, you miss 100% of the shots you don't take. So, in the spirit of taking a few shots at the future, here are some of the areas I think that are going to be interesting for the SCA product :
 
- ## Beyond vulnerabilities and license risks  
+## Beyond vulnerabilities and license risks  
 
 Today the SCA products only seem to tackle the problems with license and security issues when using open-source components. But what are the other things Developers care about when they use open-source components? How do they  choose the right library for a given task? Or, how do they figure out the correct use of a library or component API?  
 
- ## Beyond CI/CD integration
+## Beyond CI/CD integration
 
 The ability to shift left in the development process and integrate directly with the CI/CD pipeline has been critical for current SCA products to get high user adoption. Is it possible to move even earlier in the process? Can we present meaningful information to developers when they are adding an open-source library to their application? Following correct by construction approaches, can we publish a verified (or bug-free) central repository of components that can be used by any dependency management system?
  
@@ -52,4 +52,3 @@ As the number of components and libraries in an average application keeps increa
 Today, a large enterprise customer has to deal with a number of tools and processes when implementing their application security program. Can we use machine learning and AI to connect people, process, and tools involved in application security testing to provide visibility, control and proactive remediation? Modern agile software development process and best practices create a lot of data which resides in source control management, bug reports, CI/CD pipelines, logging and monitoring tools etc. and yet all this is essentially ignored by the application security tools today. As the tools integrates more closely with the development workflow and touch points, there is a great opportunity to mine software repositories to provide better security and productivity to developers.
 
 If you have read through till the end, hopefully by now you understand some of the challenges that are faced by SCA vendors as the market matures and some future directions on how they can avoid the fate of commoditization. As to how well we do at this, I suggest you check back here again in a few years time!
-
