@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: When the going gets tough: Understanding the challenges with Product commoditization in SCA
 ---
