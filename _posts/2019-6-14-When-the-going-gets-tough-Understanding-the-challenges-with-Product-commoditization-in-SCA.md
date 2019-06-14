@@ -1,6 +1,6 @@
 ---
 layout: post
-title: When the going gets tough: Understanding the challenges with Product commoditization in SCA
+title: "When the going gets tough: Understanding the challenges with Product commoditization in SCA"
 ---
 
 Recently, I have been thinking a lot about product commoditization and how it affects the software composition analysis (SCA) tools market. If you have been living under a rock and have never heard of SCA you can read a general overview of the problem and solution space [here](https://www.veracode.com/products/software-composition-analysis). 
