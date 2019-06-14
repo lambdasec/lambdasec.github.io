@@ -17,11 +17,11 @@ Now, when I started work at [SourceClear](https://en.wikipedia.org/wiki/SourceCl
 
 As the SCA product and market has matured we are now slowly heading in the territory where all the players have similar features and capabilities.  Unfortunately,  some of this is inevitable as technology products have a tendency to get [commoditized]((https://hbswk.hbs.edu/item/when-your-product-becomes-a-commodity)).  In fact, lower barrier of entry, use of cloud-based services and increased popularity of open-source components, may even be accelerating high tech commoditization in software products.  This has already happened in manufacturing as described in the article on [Why High-Tech Commoditization Is Accelerating](https://sloanreview.mit.edu/article/why-high-tech-commoditization-is-accelerating/):
 
->Knowledge embedded within state-of-the-art production and design tools is a powerful force that is leveling the global technology playing field. It democratizes innovation and makes future competition ever more challenging.
+> Knowledge embedded within state-of-the-art production and design tools is a powerful force that is leveling the global technology playing field. It democratizes innovation and makes future competition ever more challenging.
 
 And something very similar has been happening in the business of software. It has never been easier to design and build complex products and bring them to market quickly. Once a product reaches maturity in terms of market fit and all the competitors have enough resources it becomes very hard to differentiate. New features or unique capabilities can be implemented by all the players in the market relatively easily. This puts even more pressure on everyone to copy each other and the product road-maps of all the major companies start to converge. Peter Ducker summed it up nicely when he said:
 
-> "In a commodity market, you can only be as good as your dumbest competitor." 
+> In a commodity market, you can only be as good as your dumbest competitor. 
 
 As all the major players in SCA market (such as Synopsys, Veracode, WhiteSource, Snyk and others) now offer similar features w.r.t open-source component identification, vulnerability detection, security alerts and reporting, it is obvious that we are heading towards product commoditization. The current environment makes it much harder to create and sustain differentiation in a SCA product. 
 
@@ -33,7 +33,7 @@ Packaging and segmenting can only help slow down the commoditization process, bu
 
 Coming back to the problem of managing open-source risk and the current offerings in the SCA market, it is hard to imagine what the future will look like. We can look at the past though and recently I was going through the [original research memo](http://asankhaya.github.io/pdf/Research-Statement.PDF) I wrote at SourceClear back in 2014. Several of the key features of our product and those of our competitors can trace their origins to the interesting problems and questions outlined in the memo. The SCA product from SourceClear was highly differentiated because we were the first to [use machine learning for vulnerability identification](https://dl.acm.org/citation.cfm?id=3117771), [design a domain specific language for large scale program analysis](https://doi.org/10.1109/SecDev.2018.00016) and [build a static analysis for automated remediation](https://doi.org/10.1145/3236024.3275535).  
 
-As everyone knows, past performance is no guarantee of future returns. After all, it is possible that we just got lucky or the fact that were not as successful commercially as some of our other competitors must mean that there are things we could have done better. However, you miss 100% of the shots you don't take. So, in the spirit of taking a few shots at the future, here are some of the areas I think that are going to be interesting for the SCA product :
+As everyone knows, past performance is no guarantee of future returns. After all, it is possible that we just got lucky or the fact that were not as successful commercially as some of our other competitors must mean that there are things we could have done better. However, you miss 100% of the shots you don't take. So, in the spirit of taking a few shots at the future, here are some of the areas I think that are going to be interesting for the SCA product:
 
 ## Beyond vulnerabilities and license risks  
 
