@@ -3,7 +3,7 @@ layout: post
 title: "When the going gets tough: Understanding the challenges with Product commoditization in SCA"
 ---
 
-Recently, I have been thinking a lot about product commoditization and how it affects the software composition analysis (SCA) tools market. If you have been living under a rock and have never heard of SCA you can read a general overview of the problem and solution space [here](https://www.veracode.com/products/software-composition-analysis). 
+Recently, I have been thinking a lot about product commoditization and how it affects the software composition analysis (SCA) tools market. If you have been living under a rock and have never heard of SCA you can read a general overview of the problem and solution space [here](https://resources.whitesourcesoftware.com/blog-whitesource/software-composition-security-analysis). 
 
 ![Overview of SCA for DevOps](../images/SCA-for-DevOps.PNG)
 
@@ -11,9 +11,9 @@ The key insight behind SCA is that, now-a-days developers assemble large applica
 
 However, reusable third-party code is also a means for flaws and vulnerabilities to make their way downstream into applications. Vulnerabilities like – [Heartbleed](https://en.wikipedia.org/wiki/Heartbleed), [FREAK SSL/TLS](https://en.wikipedia.org/wiki/FREAK), and [GHOST](https://blog.qualys.com/laws-of-vulnerabilities/2015/01/27/the-ghost-vulnerability) – were due to bugs in popular open-source libraries. The 2017 [Equifax data breach](https://en.wikipedia.org/wiki/Equifax#May%E2%80%93July_2017_data_breach), the largest in history, was also due to a known vulnerability in the Apache Struts web framework.
 
-Now, when I started work at [SourceClear](https://en.wikipedia.org/wiki/SourceClear) back in 2014, the term SCA didn't really exist and really the only big company entering this space was [BlackDuck](https://www.blackducksoftware.com/).  And today, this space is very crowded with a number of competitors and in the last couple of years there has been a lot of consolidation with M&A activity (including SourceClear's purchase by Veracode). To give you an idea of the players in this market you can take a look at the recent Forrester Wave for SCA below:
+Now, when I started work at [SourceClear](https://en.wikipedia.org/wiki/SourceClear) back in 2014, the term SCA didn't really exist and really the only big company entering this space was [BlackDuck](https://www.blackducksoftware.com/).  And today, this space is very crowded with a number of competitors and in the last couple of years there has been a lot of consolidation with M&A activity (including SourceClear's purchase by Veracode). To give you an idea of the players in this market you can take a look at the [list of tools curated by OWASP](https://www.owasp.org/index.php/Component_Analysis#Tools_Listing) below:
 
-![Forrester Wave for SCA](../images/Forrester-Wave-for-SCA.jpg)
+![Component Analysis Tools](../images/SCA-Tools-List.PNG)
 
 As the SCA product and market has matured we are now slowly heading in the territory where all the players have similar features and capabilities.  Unfortunately,  some of this is inevitable as technology products have a tendency to get [commoditized](https://hbswk.hbs.edu/item/when-your-product-becomes-a-commodity).  In fact, lower barrier of entry, use of cloud-based services and increased popularity of open-source components, may even be accelerating high tech commoditization in software products.  This has already happened in manufacturing as described in the article on [Why High-Tech Commoditization Is Accelerating](https://sloanreview.mit.edu/article/why-high-tech-commoditization-is-accelerating/):
 
