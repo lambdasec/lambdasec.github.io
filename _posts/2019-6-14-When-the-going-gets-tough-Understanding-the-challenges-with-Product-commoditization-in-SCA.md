@@ -23,7 +23,7 @@ And something very similar has been happening in the business of software. It ha
 
 > In a commodity market, you can only be as good as your dumbest competitor. 
 
-As all the major players in SCA market (such as Synopsys, Veracode, WhiteSource, Snyk and others) now offer similar features w.r.t open-source component identification, vulnerability detection, security alerts and reporting, it is obvious that we are heading towards product commoditization. The current environment makes it much harder to create and sustain differentiation in a SCA product. 
+As all the major players in SCA market now offer similar features w.r.t open-source component identification, vulnerability detection, security alerts and reporting, it is obvious that we are heading towards product commoditization. The current environment makes it much harder to create and sustain differentiation in a SCA product. 
 
 There are couple of things we can do to resist commoditization. Firstly, we can package the product with a differentiated customer support and professional services offering. This will appeal to large enterprise customers as they are looking for convenience and end-to-end services. Or, we can try and find a different market segment where the product is still important to customers either due to less price sensitivity or specific regulatory requirements. 
 
