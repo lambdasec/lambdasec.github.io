@@ -6,6 +6,10 @@ permalink: /projects/
 
 Some projects we are working on ...
 
+## AutoFix
+
+A tool that combines static analysis with large language models (LLMs) to automatically scan and fix vulnerabilities. It uses the Semgrep static analyzer and the SantaFixer LLM, you can check it out [here.](https://github.com/lambdasec/autofix) 
+
 ## Botwall4J
 
 A botwall for Java web applications that helps prevent automated threats like content scraping, brute force login attempts, false clicks etc. It is implemented as a Java servlet filter you can check it out [here.](https://github.com/lambdasec/botwall4j) 
