@@ -34,5 +34,3 @@ As we explore this new frontier, questions of ethical considerations, data priva
 Imagine a world where you can listen to a podcast hosted by a version of yourself created through digital means, or where your descendants can interact with a model of you long after you're gone. This is the vision that meraGPT and similar projects offer—a future where our digital selves can continue to interact, teach, and influence long after our physical selves have departed.
 
 In conclusion, meraGPT is not just a technological achievement; it's a philosophical invitation to reimagine our relationship with memory, legacy, and identity in the digital age. As we navigate this uncharted territory, the opportunities for connection, preservation, and remembrance are as profound as they are promising. The journey towards digital immortality has just begun, and it's up to us to shape its path forward.
-
-[![Demo video of meraGPT](http://img.youtube.com/vi/F9-Qk86QyMM/0.jpg)](http://www.youtube.com/watch?v=F9-Qk86QyMM "Sparks of Digital Immortality with meraGPT")
