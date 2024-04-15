@@ -4,7 +4,7 @@ title: "Sparks of Digital Immortality with meraGPT"
 ---
 
 ## The Genesis of Digital Immortality
-In an era where our digital footprints are as expansive as the internet itself, the concept of digital immortality is not just science fiction but a burgeoning reality. The introduction of (meraGPT)[https://meraGPT.com], the world's first digital afterlife as a service platform, represents not only a leap towards this future but also a reflection on humanity's long-standing desire to leave a mark beyond their physical existence.
+In an era where our digital footprints are as expansive as the internet itself, the concept of digital immortality is not just science fiction but a burgeoning reality. The introduction of [meraGPT](https://meraGPT.com), the world's first digital afterlife as a service platform, represents not only a leap towards this future but also a reflection on humanity's long-standing desire to leave a mark beyond their physical existence.
 
 ![Examples showing the meraGPT models](../images/meraGPT.webp)
 
@@ -35,4 +35,4 @@ Imagine a world where you can listen to a podcast hosted by a version of yoursel
 
 In conclusion, meraGPT is not just a technological achievement; it's a philosophical invitation to reimagine our relationship with memory, legacy, and identity in the digital age. As we navigate this uncharted territory, the opportunities for connection, preservation, and remembrance are as profound as they are promising. The journey towards digital immortality has just begun, and it's up to us to shape its path forward.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F9-Qk86QyMM?si=kZizxkWoj-k1L2gr&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Demo video of meraGPT](http://img.youtube.com/vi/F9-Qk86QyMM/0.jpg)](http://www.youtube.com/watch?v=F9-Qk86QyMM "Sparks of Digital Immortality with meraGPT")
