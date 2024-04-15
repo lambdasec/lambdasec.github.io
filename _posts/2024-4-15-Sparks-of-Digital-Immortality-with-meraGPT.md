@@ -3,7 +3,6 @@ layout: post
 title: "Sparks of Digital Immortality with meraGPT"
 ---
 
-## The Genesis of Digital Immortality
 In an era where our digital footprints are as expansive as the internet itself, the concept of digital immortality is not just science fiction but a burgeoning reality. The introduction of [meraGPT](https://meraGPT.com), the world's first digital afterlife as a service platform, represents not only a leap towards this future but also a reflection on humanity's long-standing desire to leave a mark beyond their physical existence.
 
 ![Examples showing the meraGPT models](../images/meraGPT.webp)
