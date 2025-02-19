@@ -6,6 +6,10 @@ permalink: /projects/
 
 Some projects we are working on ...
 
+## AutoGrep
+
+A tool that automates Semgrep rule generation and filtering by using LLMs to analyze vulnerability patches, enabling automatic creation of high-quality security rules without manual curation, you can check it out [here.](https://github.com/lambdasec/autogrep) 
+
 ## AutoFix
 
 A tool that combines static analysis with large language models (LLMs) to automatically scan and fix vulnerabilities. It uses the Semgrep static analyzer and the SantaFixer LLM, you can check it out [here.](https://github.com/lambdasec/autofix) 
