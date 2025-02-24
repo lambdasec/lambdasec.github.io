@@ -6,7 +6,7 @@ permalink: /projects/
 
 Some projects we are working on ...
 
-## AutoGrep
+## Autogrep
 
 A tool that automates Semgrep rule generation and filtering by using LLMs to analyze vulnerability patches, enabling automatic creation of high-quality security rules without manual curation, you can check it out [here.](https://github.com/lambdasec/autogrep) 
 
