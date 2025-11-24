@@ -287,3 +287,7 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+.svg-icon.huggingface {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCI+PC9jaXJjbGU+PHBhdGggZD0iTTguNCAxNC44OWEyLjcgMi43IDAgMCAxLTMuNzktMS4yNGwtMS4yOSAxLjI3YTQuMiA0LjIgMCAwIDAgNS44OCAxLjljMi43IDIuNyAwIDAgMS0uNzktMi45M3ptMTEuOCA3LjY2bC0xLjI5LTEuMjdhMi43IDIuNyAwIDAgMS0zLjc5IDEuMjRsMS4yOSAxLjI3YTQuMiA0LjIgMCAwIDAtNS44OC0xLjlhMi43IDIuNyAwIDAgMSAuNzktMi45M2wtMS4yOS0xLjI3YTQuMiA0LjIgMCAwIDAgNS44OCAxLjl6Ii8+PC9zdmc+");
+}
