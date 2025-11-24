@@ -289,12 +289,6 @@ footer {
 @import "svg-icons";
 
 .svg-icon.huggingface {
-  background: none;
-  font-size: 26px;           /* looks perfect next to your other icons */
-  line-height: 1;
-  display: inline-block;
-}
-
-.svg-icon.huggingface::before {
-  content: "🤗";              /* Official Hugging Face emoji */
+  background: url("/images/hf-logo.svg") no-repeat center;
+  background-size: contain;
 }
