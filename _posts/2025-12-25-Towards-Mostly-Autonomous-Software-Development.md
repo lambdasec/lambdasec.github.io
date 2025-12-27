@@ -3,8 +3,6 @@ layout: post
 title: "Towards Mostly Autonomous Software Development"
 date: 2025-12-25
 ---
-Welcome to my LinkedIn newsletter! In each issue of Breaking the Build, I'll share my thoughts on software development through the looking glass of behavioural sciences. Subscribe to stay updated.
-
 Almost exactly a year ago, I [wrote](https://www.linkedin.com/pulse/developer-has-clothes-asankhaya-sharma-le96c?lipi=urn%3Ali%3Apage%3Ad_flagship3_publishing_post_edit%3BcSe%2B8CshTNaCL0HOBIahSw%3D%3D) about how coding assistants were changing software development. At the time, Claude Sonnet 3.5 was the SOTA coding model, and we were witnessing the early signs of a fundamental shift. Today, that shift has accelerated beyond what I imagined.
 
 We're approaching a point where developers will stop reviewing the code their AI assistants generate. Think about that for a moment. When was the last time you inspected your compiled bytecode? You don't, because you trust the compiler. Natural language is becoming the real specification, and the generated code is just an implementation detail.
