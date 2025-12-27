@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Towards Mostly Autonomous Software Development"
+date: 2025-12-25
 ---
 Welcome to my LinkedIn newsletter! In each issue of Breaking the Build, I'll share my thoughts on software development through the looking glass of behavioural sciences. Subscribe to stay updated.
 
