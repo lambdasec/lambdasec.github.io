@@ -1,0 +1,22 @@
+---
+import { NAV, SITE } from '../consts';
+const path = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label={SITE.name}>
+      <span class="lam">&lambda;</span>
+      <span class="name">Lambda Security</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      {NAV.map((item) => (
+        <a
+          href={item.href}
+          data-secondary={item.external ? '' : undefined}
+          aria-current={!item.external && path === item.href ? 'page' : undefined}
+          {...(item.external ? { target: '_blank', rel: 'noopener' } : {})}
+        >{item.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>

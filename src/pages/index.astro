@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { SITE } from '../consts';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { month: 'short', day: '2-digit' }).toUpperCase();
+
+// group by year
+const groups = new Map<number, typeof posts>();
+for (const p of posts) {
+  const y = p.data.pubDate.getFullYear();
+  if (!groups.has(y)) groups.set(y, []);
+  groups.get(y)!.push(p);
+}
+const years = [...groups.keys()].sort((a, b) => b - a);
+---
+<Base>
+  <section class="hero">
+    <div class="wrap">
+      <span class="lam-mark" aria-hidden="true">&lambda;</span>
+      <span class="kicker mono reveal">Lambda Security · Research Notes</span>
+      <h1 class="reveal" style="animation-delay:.06s">
+        Static analysis, <em>LLMs</em>, and the craft of secure software.
+      </h1>
+      <p class="lede reveal" style="animation-delay:.12s">{SITE.description}</p>
+    </div>
+  </section>
+
+  <section class="index">
+    <div class="wrap">
+      {years.map((year) => (
+        <div class="year-group">
+          <span class="year-label mono">{year}</span>
+          {groups.get(year)!.map((post) => (
+            <article class="entry">
+              <span class="date">{fmt(post.data.pubDate)}</span>
+              <div>
+                <h2><a href={post.data.permalink}>{post.data.title}</a></h2>
+                {post.data.description && <p class="excerpt">{post.data.description}</p>}
+                <a class="more" href={post.data.permalink}>Read <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+          ))}
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>

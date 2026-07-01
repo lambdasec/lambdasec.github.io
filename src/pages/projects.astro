@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+
+const projects = [
+  {
+    name: 'Frame',
+    href: 'https://github.com/lambdasec/frame',
+    desc: 'A separation-logic verification tool with security scanning. Frame uses SMT-backed reasoning to verify entailments and to find and confirm vulnerabilities across multiple languages.',
+  },
+  {
+    name: 'Autogrep',
+    href: 'https://github.com/lambdasec/autogrep',
+    desc: 'Automates Semgrep rule generation and filtering by using LLMs to analyze vulnerability patches, enabling automatic creation of high-quality security rules without manual curation.',
+  },
+  {
+    name: 'AutoFix',
+    href: 'https://github.com/lambdasec/autofix',
+    desc: 'Combines static analysis with large language models to automatically scan and fix vulnerabilities, using the Semgrep static analyzer and the SantaFixer LLM.',
+  },
+  {
+    name: 'Botwall4J',
+    href: 'https://github.com/lambdasec/botwall4j',
+    desc: 'A botwall for Java web applications that helps prevent automated threats such as content scraping, brute-force logins, and false clicks. Implemented as a Java servlet filter.',
+  },
+  {
+    name: 'Lambda Advisory Database',
+    href: 'https://github.com/lambdasec/lambda-advisory-db',
+    desc: 'A database of vulnerabilities associated with functional programming languages — a look at the kinds of defects that lead to security issues in functional languages.',
+  },
+];
+---
+<Base title="Projects" description="Open-source security research tools from Lambda Security.">
+  <section class="hero">
+    <div class="wrap">
+      <span class="lam-mark" aria-hidden="true">&lambda;</span>
+      <span class="kicker mono reveal">Open Source</span>
+      <h1 class="reveal" style="animation-delay:.06s">Projects we&rsquo;re building.</h1>
+      <p class="lede reveal" style="animation-delay:.12s">
+        Tools at the intersection of static analysis, formal methods, and language models.
+      </p>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="wrap">
+      {projects.map((p, i) => (
+        <article class="project">
+          <span class="num">{String(i + 1).padStart(2, '0')}</span>
+          <div>
+            <h3>{p.name}</h3>
+            <p>{p.desc}</p>
+            <a class="link" href={p.href} target="_blank" rel="noopener">
+              View on GitHub <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>

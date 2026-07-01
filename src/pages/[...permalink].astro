@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import Post from '../layouts/Post.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    // strip leading/trailing slashes; Astro adds them back per trailingSlash config
+    params: { permalink: post.data.permalink.replace(/^\/+|\/+$/g, '') },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+<Base title={post.data.title} description={post.data.description}>
+  <Post post={post}>
+    <Content />
+  </Post>
+</Base>

@@ -1,0 +1,15 @@
+---
+import { SITE } from '../consts';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="f-brand">&lambda;</span>
+    <div class="f-links">
+      <a href={SITE.github} target="_blank" rel="noopener">GitHub</a>
+      <a href={SITE.huggingface} target="_blank" rel="noopener">Hugging Face</a>
+      <a href="/rss.xml">RSS</a>
+    </div>
+    <span class="copy">© {year} Lambda Security · {SITE.tagline}</span>
+  </div>
+</footer>
