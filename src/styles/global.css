@@ -2,7 +2,42 @@
    Lambda Security — design system
    "Blueprint": light, cool, engineering-spec aesthetic
    IBM Plex Serif (display) · IBM Plex Sans (body) · IBM Plex Mono (ui/code)
+   Fonts self-hosted (latin subset, woff2) — no third-party requests.
    ============================================================ */
+
+/* ---- IBM Plex Sans (variable, body) ---- */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 700;
+  src: url('/fonts/plex-sans-wght.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 700;
+  src: url('/fonts/plex-sans-wght-italic.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* ---- IBM Plex Serif (display) ----
+   'optional': fast connections get the served face within the block window;
+   slow connections keep the Georgia fallback instead of a late swap that would
+   push LCP. The serif fallback is visually close, so the tradeoff is invisible. */
+@font-face { font-family: 'IBM Plex Serif'; font-style: normal; font-display: optional; font-weight: 400; src: url('/fonts/plex-serif-400.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Serif'; font-style: italic; font-display: optional; font-weight: 400; src: url('/fonts/plex-serif-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Serif'; font-style: normal; font-display: optional; font-weight: 500; src: url('/fonts/plex-serif-500.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Serif'; font-style: italic; font-display: optional; font-weight: 500; src: url('/fonts/plex-serif-500-italic.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Serif'; font-style: normal; font-display: optional; font-weight: 600; src: url('/fonts/plex-serif-600.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Serif'; font-style: italic; font-display: optional; font-weight: 600; src: url('/fonts/plex-serif-600-italic.woff2') format('woff2'); }
+
+/* ---- IBM Plex Mono (ui/code) ---- */
+@font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-display: swap; font-weight: 400; src: url('/fonts/plex-mono-400.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-display: swap; font-weight: 500; src: url('/fonts/plex-mono-500.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-display: swap; font-weight: 600; src: url('/fonts/plex-mono-600.woff2') format('woff2'); }
 
 :root {
   /* Blueprint — light, cool, engineering-spec */
@@ -11,11 +46,11 @@
   --bg-3:      #d3dbe6;
   --ink:       #12233a;
   --ink-dim:   #43566f;
-  --ink-faint: #7788a1;
+  --ink-faint: #556278;   /* AA on --bg (5.2:1) */
   --line:      rgba(18, 35, 58, 0.15);
   --line-2:    rgba(18, 35, 58, 0.28);
   --accent:    #2f5fe0;   /* signal blue */
-  --accent-2:  #0f8f86;   /* teal */
+  --accent-2:  #0a736c;   /* teal — AA on --bg (4.8:1) */
   --accent-dim: rgba(47, 95, 224, 0.12);
   --accent-hover: #1c46bd;
   --ink-strong: #0a1728;
@@ -87,6 +122,29 @@ main, header, footer { position: relative; z-index: 1; }
 ::selection { background: var(--accent); color: var(--sel-ink); }
 
 a { color: inherit; text-decoration: none; }
+
+/* keyboard focus + skip-link (a11y) */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.7rem 1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+}
+.skip-link:focus {
+  left: 0.6rem;
+  top: 0.6rem;
+}
 
 img { max-width: 100%; height: auto; display: block; }
 
@@ -351,7 +409,7 @@ img { max-width: 100%; height: auto; display: block; }
   border: 1px solid var(--line);
   padding: 0.1em 0.4em;
   border-radius: 4px;
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 .prose pre {
   font-family: var(--font-mono);
@@ -365,6 +423,8 @@ img { max-width: 100%; height: auto; display: block; }
   position: relative;
 }
 .prose pre code { background: none; border: 0; padding: 0; color: inherit; font-size: inherit; }
+/* Shiki (github-light) ships one token color that fails AA on white; darken it. */
+.prose pre span[style*="E36209" i] { color: #a84300 !important; }
 .prose table {
   width: 100%;
   border-collapse: collapse;
@@ -392,7 +452,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .project:last-child { border-bottom: 1px solid var(--line); }
 .project .num { font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); padding-top: 0.5rem; }
-.project h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.7rem; margin: 0 0 0.5rem; }
+.project h2 { font-family: var(--font-display); font-weight: 400; font-size: 1.7rem; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
 .project p { color: var(--ink-dim); margin: 0 0 0.9rem; max-width: 60ch; font-size: 1.05rem; }
 .project .link {
   font-family: var(--font-mono);
@@ -428,8 +488,15 @@ img { max-width: 100%; height: auto; display: block; }
   to   { opacity: 1; transform: translateY(0); }
 }
 .reveal { opacity: 0; animation: fade-up 0.7s var(--ease) forwards; }
+/* The primary headings are the LCP element — paint them immediately (no opacity
+   gating), but keep a transform-only entrance so the motion still reads. */
+@keyframes rise { from { transform: translateY(14px); } to { transform: translateY(0); } }
+.hero h1.reveal, .article-head.reveal {
+  opacity: 1;
+  animation: rise 0.7s var(--ease) both;
+}
 @media (prefers-reduced-motion: reduce) {
-  .reveal { animation: none; opacity: 1; }
+  .reveal, .hero h1.reveal, .article-head.reveal { animation: none; opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
 }
 

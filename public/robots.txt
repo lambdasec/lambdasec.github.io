@@ -1,0 +1,5 @@
+# https://lambdasec.github.io
+User-agent: *
+Allow: /
+
+Sitemap: https://lambdasec.github.io/sitemap-index.xml

@@ -7,6 +7,12 @@ export const SITE = {
   github: 'https://github.com/lambdasec',
   huggingface: 'https://huggingface.co/lambdasec',
   rss: '/rss.xml',
+  // Author / publisher used for structured data and Open Graph.
+  author: 'Lambda Security',
+  locale: 'en_US',
+  lang: 'en',
+  ogImage: '/images/og-default.png',
+  themeColor: '#e9edf3',
 };
 
 export const NAV = [

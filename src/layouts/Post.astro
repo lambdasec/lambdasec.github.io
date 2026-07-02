@@ -5,15 +5,16 @@ const { post } = Astro.props;
 const date = post.data.pubDate.toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric',
 });
+const iso = post.data.pubDate.toISOString();
 ---
-<article class="article">
+<article class="article" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="wrap">
     <header class="article-head reveal">
       <a class="back" href="/"><span aria-hidden="true">&larr;</span> All writing</a>
-      <span class="meta mono">{date}</span>
-      <h1>{post.data.title}</h1>
+      <time class="meta mono" datetime={iso} itemprop="datePublished">{date}</time>
+      <h1 itemprop="headline">{post.data.title}</h1>
     </header>
-    <div class="prose reveal" style="animation-delay:.08s">
+    <div class="prose reveal" style="animation-delay:.08s" itemprop="articleBody">
       <slot />
     </div>
   </div>
